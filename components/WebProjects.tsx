@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Reveal } from './Reveal';
 import { ExternalLink } from 'lucide-react';
@@ -14,10 +15,10 @@ interface Project {
 export const WebProjects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: "Cubic Recruitments",
+      title: "Cubiq Recruitment",
       description: "Corporate website for a professional recruitment agency. Features clear service offerings and candidate portals.",
       tags: ["Corporate", "Recruitment", "Web Design"],
-      link: "https://www.cubicrecruitments.com",
+      link: "https://www.cubiqrecruitment.com/",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop", // Modern Office
     },
     {
