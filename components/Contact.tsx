@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 import { Reveal } from './Reveal';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageCircle, Github, Linkedin } from 'lucide-react';
 
 export const Contact: React.FC = () => {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thanks for reaching out! This is a demo form.");
-  };
-
   return (
     <section id="contact" className="py-20 border-t border-stone-200/50">
       <div className="max-w-4xl mx-auto px-6">
@@ -23,7 +17,7 @@ export const Contact: React.FC = () => {
         </Reveal>
 
         <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl p-8 md:p-12 border border-white/60">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
@@ -41,6 +35,18 @@ export const Contact: React.FC = () => {
                     </div>
                     <span className="font-medium">Remote / Available Worldwide</span>
                   </div>
+                  <div className="flex items-center gap-4 text-stone-600 group">
+                    <div className="w-12 h-12 bg-stone-50/80 text-stone-500 rounded-full flex items-center justify-center shrink-0 group-hover:bg-black group-hover:text-white transition-colors">
+                      <Github size={20} />
+                    </div>
+                    <a href="https://github.com/Jaymehta45" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-black transition-colors">github.com/Jaymehta45</a>
+                  </div>
+                  <div className="flex items-center gap-4 text-stone-600 group">
+                    <div className="w-12 h-12 bg-blue-50/80 text-blue-600 rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#0077b5] group-hover:text-white transition-colors">
+                      <Linkedin size={20} />
+                    </div>
+                    <a href="https://www.linkedin.com/in/jay-mehta-8116722a9/" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-[#0077b5] transition-colors">LinkedIn Profile</a>
+                  </div>
                 </div>
               </div>
               
@@ -51,52 +57,33 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">Name</label>
-                <input 
-                  type="text" 
-                  id="name"
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white/80 focus:bg-white"
-                  placeholder="Your Name"
-                  value={formState.name}
-                  onChange={(e) => setFormState({...formState, name: e.target.value})}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-1">Email</label>
-                <input 
-                  type="email" 
-                  id="email"
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white/80 focus:bg-white"
-                  placeholder="john@example.com"
-                  value={formState.email}
-                  onChange={(e) => setFormState({...formState, email: e.target.value})}
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1">Message</label>
-                <textarea 
-                  id="message"
-                  rows={4}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white/80 focus:bg-white resize-none"
-                  placeholder="How can I help you?"
-                  value={formState.message}
-                  onChange={(e) => setFormState({...formState, message: e.target.value})}
-                ></textarea>
-              </div>
-              <button 
-                type="submit"
-                className="w-full bg-stone-900 text-white font-bold py-3 rounded-lg hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                Send Message
-                <Send size={16} />
-              </button>
-            </form>
+            {/* WhatsApp / Direct Connect */}
+            <div className="flex flex-col justify-center space-y-6">
+                <div className="bg-green-50/50 border border-green-100/50 p-8 rounded-2xl relative overflow-hidden">
+                    {/* Decorative bg element */}
+                    <div className="absolute -right-6 -top-6 w-24 h-24 bg-green-200/20 rounded-full blur-2xl"></div>
+
+                    <h3 className="text-xl font-bold text-stone-900 mb-2 relative z-10">Quick Chat</h3>
+                    <p className="text-stone-600 mb-6 relative z-10 text-sm">
+                        Prefer a direct conversation? You can reach me directly via WhatsApp or phone.
+                    </p>
+
+                    <a 
+                       href="https://wa.me/9004770343" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] shadow-lg hover:shadow-green-200 relative z-10 mb-6"
+                    >
+                        <MessageCircle size={24} />
+                        Chat on WhatsApp
+                    </a>
+
+                    <div className="flex items-center justify-center gap-3 text-stone-700 font-medium bg-white/60 py-3 rounded-lg border border-stone-100">
+                        <Phone size={18} className="text-stone-400" />
+                        <span>+91 9004770343</span>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
