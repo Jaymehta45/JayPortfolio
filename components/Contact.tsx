@@ -27,7 +27,7 @@ export const Contact: React.FC = () => {
                     <div className="w-12 h-12 bg-blue-50/80 text-blue-600 rounded-full flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <Mail size={20} />
                     </div>
-                    <a href="mailto:jayy.mehta45@gmail.com" className="font-medium break-all hover:text-blue-600 transition-colors">jayymehta45@gmail.com</a>
+                    <a href="mailto:jayy.mehta45@gmail.com" className="font-medium break-all hover:text-blue-600 transition-colors">jayy.mehta45@gmail.com</a>
                   </div>
                   <div className="flex items-center gap-4 text-stone-600 group">
                     <div className="w-12 h-12 bg-stone-50/80 text-stone-500 rounded-full flex items-center justify-center shrink-0 group-hover:bg-stone-800 group-hover:text-white transition-colors">
@@ -69,7 +69,7 @@ export const Contact: React.FC = () => {
                     </p>
 
                     <a 
-                       href="https://wa.me/9004770343" 
+                       href="https://alvo.chat/6TGc$0" 
                        target="_blank" 
                        rel="noopener noreferrer"
                        className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] shadow-lg hover:shadow-green-200 relative z-10 mb-6"
