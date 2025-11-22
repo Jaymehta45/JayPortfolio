@@ -35,13 +35,6 @@ export const WebProjects: React.FC = () => {
       link: "https://fitlife-jtyn.vercel.app",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop", // Analytics/Dashboard
       isDesktopOnly: true
-    },
-    {
-      title: "Ente.io",
-      description: "A secure, end-to-end encrypted photo storage platform. Focused on privacy and a clean, reassuring user experience.",
-      tags: ["SaaS", "Privacy", "Product Design"],
-      link: "https://ente.io",
-      image: "https://images.unsplash.com/photo-1614064641938-3e821efd8536?q=80&w=800&auto=format&fit=crop", // Digital Security/Lock
     }
   ];
 
@@ -100,7 +93,7 @@ export const WebProjects: React.FC = () => {
                       Visit Site <ExternalLink size={16} className="ml-2" />
                     </a>
                     {project.isDesktopOnly && (
-                        <span className="text-xs text-amber-600 font-medium bg-amber-50 px-2 py-1 rounded border border-amber-100 hidden sm:inline-block">
+                        <span className="text-xs text-amber-600 font-medium bg-amber-50 px-2 py-1 rounded border border-amber-100 inline-block">
                             Desktop View Recommended
                         </span>
                     )}
