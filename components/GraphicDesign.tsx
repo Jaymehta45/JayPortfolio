@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Reveal } from './Reveal';
 import { X, ExternalLink, Maximize2, Palette } from 'lucide-react';
@@ -15,27 +16,27 @@ export const GraphicDesign: React.FC = () => {
   const designItems: DesignItem[] = [
     {
       title: "Menu Front Cover",
-      link: "https://ibb.co/ycM0FswB",
+      link: "https://ibb.co/DNQf1sD",
       imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     {
       title: "Menu Back Cover",
-      link: "https://ibb.co/hF0sXr0Y",
+      link: "https://ibb.co/Nd9CHvz7",
       imageUrl: "https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     {
       title: "Inner Page Layout",
-      link: "https://ibb.co/1wQcHPM",
+      link: "https://ibb.co/p6kqDzZ9",
       imageUrl: "https://images.unsplash.com/photo-1595538154519-bc102513219e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     {
       title: "Beverage Section",
-      link: "https://ibb.co/zqsnNWk",
+      link: "https://ibb.co/mrDZb4pP",
       imageUrl: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     {
       title: "Special Offers",
-      link: "https://ibb.co/WW01HNvZ",
+      link: "https://ibb.co/GX1LF2J",
       imageUrl: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     }
   ];
