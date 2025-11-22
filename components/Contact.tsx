@@ -57,30 +57,25 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* WhatsApp / Direct Connect */}
+            {/* Direct Connect */}
             <div className="flex flex-col justify-center space-y-6">
-                <div className="bg-green-50/50 border border-green-100/50 p-8 rounded-2xl relative overflow-hidden">
+                <div className="bg-green-50/50 border border-green-100/50 p-8 rounded-2xl relative overflow-hidden text-center">
                     {/* Decorative bg element */}
                     <div className="absolute -right-6 -top-6 w-24 h-24 bg-green-200/20 rounded-full blur-2xl"></div>
 
                     <h3 className="text-xl font-bold text-stone-900 mb-2 relative z-10">Quick Chat</h3>
-                    <p className="text-stone-600 mb-6 relative z-10 text-sm">
-                        Prefer a direct conversation? You can reach me directly via WhatsApp or phone.
+                    <p className="text-stone-600 mb-8 relative z-10 text-sm">
+                        Prefer a direct conversation? You can reach me directly via phone.
                     </p>
 
-                    <a 
-                       href="https://alvo.chat/6TGc$0" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] shadow-lg hover:shadow-green-200 relative z-10 mb-6"
-                    >
-                        <MessageCircle size={24} />
-                        Chat on WhatsApp
-                    </a>
+                    <div className="flex items-center justify-center gap-3 text-stone-700 font-medium bg-white/60 py-4 rounded-xl border border-stone-100 mb-4 relative z-10 shadow-sm">
+                        <Phone size={20} className="text-stone-400" />
+                        <span className="text-lg">+91 9004770343</span>
+                    </div>
 
-                    <div className="flex items-center justify-center gap-3 text-stone-700 font-medium bg-white/60 py-3 rounded-lg border border-stone-100">
-                        <Phone size={18} className="text-stone-400" />
-                        <span>+91 9004770343</span>
+                    <div className="flex items-center justify-center gap-2 text-green-600 font-medium text-sm relative z-10 opacity-90">
+                        <MessageCircle size={16} />
+                        <span>Available on WhatsApp</span>
                     </div>
                 </div>
             </div>
